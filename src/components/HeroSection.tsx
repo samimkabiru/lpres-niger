@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="relative py-10 px-5 bg-[url('src/assets/corn-field.jpg')] bg-cover bg-center lg:bg-none lg:bg-white/50 lg:backdrop-blur-lg -z-10">
+    <div className="relative py-10 px-5 bg-[url('src/assets/gov-bago.png')] bg-cover bg-center lg:bg-none lg:bg-white/50 lg:backdrop-blur-lg -z-10">
       {/* overlay */}
       <div className="absolute inset-0 bg-black/70 -translate-z-1 lg:hidden"></div>
 

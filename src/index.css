@@ -9,12 +9,7 @@
 
 @media screen and (min-width: 1024px) {
   .circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    position: absolute;
-    display: initial;
-    z-index: -30;
+    display: block;
   }
 
   .animate-blob {
