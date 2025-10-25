@@ -10,7 +10,7 @@ import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
 
 const ProjectsCarousel = () => {
-  const projects = [{ image: '#' }];
+  // const projects = [{ image: '#' }];
 
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
