@@ -50,7 +50,7 @@ const ValueChainsShowcase = () => {
   ];
 
   return (
-    <div className="p-4 grid grid-cols-2 gap-8 items-start overflow-hidden lg:grid-cols-4">
+    <div className="px-4 py-7 grid grid-cols-2 gap-8 items-start overflow-hidden lg:grid-cols-4">
       {valueChains.map((chain) =>
         !chain.type ? (
           <div
@@ -69,8 +69,10 @@ const ValueChainsShowcase = () => {
           </div>
         ) : (
           <div
-            className={`border-dashed border-2 border-green-700 w-3xl justify-self-${
-              chain.position === 'left' ? 'end mr-10' : 'center ml-10'
+            className={`border-dashed border-2 border-green-700 w-3xl ${
+              chain.position === 'left'
+                ? 'justify-self-end mr-10'
+                : 'justify-self-start ml-10'
             } h-full rounded-lg hidden lg:block`}
           ></div>
         )
