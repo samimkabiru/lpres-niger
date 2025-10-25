@@ -1,3 +1,5 @@
+import lpresLogo from '../assets/logo.webp';
+
 const NavBar = () => {
   const navRoutes = [
     { name: 'Home', path: '#' },
@@ -21,11 +23,7 @@ const NavBar = () => {
       <nav className="bg-white border-gray-200 border-b-1 lg:bg-white/40 lg:backdrop-blur-md z-20">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#">
-            <img
-              src="src/assets/logo.webp"
-              className="h-8"
-              alt="Flowbite Logo"
-            />
+            <img src={lpresLogo} className="h-8" alt="Flowbite Logo" />
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"

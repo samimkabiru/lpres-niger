@@ -2,6 +2,7 @@ import { GiDuration, GiMoneyStack } from 'react-icons/gi';
 import { IoLogoWebComponent } from 'react-icons/io5';
 import { MdOutlineVpnLock } from 'react-icons/md';
 import ProjectsCarousel from './ProjectsCarousel';
+import farmRoosters from '../assets/farm-roosters.jpg';
 
 const FrameworkSection = () => {
   const statistics = [
@@ -69,7 +70,7 @@ const FrameworkSection = () => {
         </div>
         <img
           className="w-full h-[250px] rounded-2xl object-cover"
-          src="src/assets/farm-roosters.jpg"
+          src={farmRoosters}
           alt="roosters"
           loading="lazy"
         />
