@@ -1,5 +1,3 @@
-import lpresLogo from '../assets/logo.webp';
-
 const NavBar = () => {
   const navRoutes = [
     { name: 'Home', path: '#' },
@@ -69,7 +67,7 @@ const NavBar = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 z-10">
             {navRoutes.map((route) =>
               !route.children ? (
                 <li key={route.name}>

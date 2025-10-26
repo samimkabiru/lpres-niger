@@ -4,7 +4,7 @@ import ValueChainsSection from './components/ValueChainsSection';
 
 const App = () => {
   return (
-    <div>
+    <div className="z-0">
       <HeaderSection />
       <ValueChainsSection />
       <FrameworkSection />

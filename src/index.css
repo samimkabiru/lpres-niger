@@ -3,57 +3,8 @@
 @plugin "daisyui";
 @custom-variant dark (&:is(.dark *));
 
-.circle {
-  display: none;
-}
-
 .stat {
   box-shadow: 0 3px rgb(0, 153, 0);
-}
-
-@media screen and (min-width: 1024px) {
-  .circle {
-    display: block;
-  }
-
-  .animate-blob {
-    animation: blob 6s ease-in infinite alternate;
-  }
-
-  .animation-delay-0 {
-    animation-delay: 0s;
-  }
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-  .animation-delay-4000 {
-    animation-delay: 4s;
-  }
-
-  .c1 {
-    box-shadow: 0 0 150px 100px rgb(127, 240, 127);
-  }
-  .c2 {
-    box-shadow: 0 0 150px 100px rgb(120, 196, 120);
-  }
-  .c3 {
-    box-shadow: 0 0 150px 100px rgb(91, 168, 132);
-  }
-
-  @keyframes blob {
-    0% {
-      transform: translate(0px, 0px) scale(1);
-    }
-    33% {
-      transform: translate(100px, -150px) scale(1.3);
-    }
-    66% {
-      transform: translate(-80px, 80px) scale(0.7);
-    }
-    100% {
-      transform: translate(0px, 0px) scale(1);
-    }
-  }
 }
 
 @theme inline {
