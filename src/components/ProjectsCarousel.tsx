@@ -15,7 +15,7 @@ const ProjectsCarousel = () => {
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
   return (
-    <div>
+    <div className="relative overflow-hidden">
       <Carousel
         className="w-full max-w-[800px] mx-auto"
         plugins={[plugin.current]}

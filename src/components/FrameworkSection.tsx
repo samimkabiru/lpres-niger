@@ -18,13 +18,13 @@ const FrameworkSection = () => {
         FRAMEWORK
       </h2>
       <div className="flex flex-col gap-10 max-w-[1024px] mx-auto relative md:flex-row">
-        <div className="absolute right-0 left-0 top-1/2 w-auto h-[5px] bg-gray-200 -z-10 hidden md:block"></div>
+        <div className="absolute right-0 left-0 top-1/2 w-auto h-[5px] bg-gray-200 hidden md:block"></div>
         {statistics.map((stat) => (
           <div
             key={stat.name}
             className="stat p-5 rounded-3xl bg-gray-100 grow z-10"
           >
-            <span className="w-[50px] h-[50px] mb-5 bg-green-600 text-white text-3xl inline-flex justify-center items-center rounded-full">
+            <span className="w-[50px] h-[50px] mb-5 bg-green-600 justify-self-center text-white text-3xl inline-flex justify-center items-center rounded-full">
               {stat.icon}
             </span>
             <p className="text-4xl font-semibold text-green-700 mb-2">

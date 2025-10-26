@@ -7,7 +7,7 @@ const NavBar = () => {
       name: 'About',
       path: '#',
       children: [
-        { name: 'About L-Pres', path: '#' },
+        { name: 'L-Pres', path: '#' },
         { name: 'The L-Pres Team', path: '#' },
       ],
     },
@@ -15,106 +15,87 @@ const NavBar = () => {
     { name: 'News', path: '#' },
     { name: 'Contact', path: '#' },
     { name: 'Staff Mail', path: '#' },
-    { name: 'Projects', path: '#' },
   ];
 
   return (
     <div>
-      <nav className="bg-white border-gray-200 border-b-1 lg:bg-white/40 lg:backdrop-blur-md z-20">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#">
-            <img src={lpresLogo} className="h-8" alt="Flowbite Logo" />
-          </a>
-          <button
-            data-collapse-toggle="navbar-dropdown"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 transition-colors"
-            aria-controls="navbar-dropdown"
-            aria-expanded="false"
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
+      <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div
-            className="hidden w-full md:block md:w-auto"
-            id="navbar-dropdown"
-          >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white lg:bg-white/5">
-              {navRoutes.map((route, index) =>
+              >
+                {' '}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />{' '}
+              </svg>
+            </div>
+            <ul
+              tabIndex={-1}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              {navRoutes.map((route) =>
                 !route.children ? (
-                  <li key={index}>
-                    <a
-                      href={route.path}
-                      className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0"
-                    >
-                      {route.name}
-                    </a>
+                  <li key={route.name}>
+                    <a href={route.path}>{route.name}</a>
                   </li>
                 ) : (
-                  <li key={index}>
-                    <button
-                      id="dropdownNavbarLink"
-                      data-dropdown-toggle="dropdownNavbar"
-                      className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto cursor-pointer"
-                    >
-                      {route.name}
-                      <svg
-                        className="w-2.5 h-2.5 ms-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    <div
-                      id="dropdownNavbar"
-                      className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44"
-                    >
-                      <ul
-                        className="py-2 text-sm text-gray-700"
-                        aria-labelledby="dropdownLargeButton"
-                      >
-                        {route.children.map((route) => (
-                          <li key={route.name}>
-                            <a
-                              href={route.path}
-                              className="block px-4 py-2 hover:bg-gray-100"
-                            >
-                              {route.name}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                  <li key={route.name}>
+                    <p>{route.name}</p>
+                    <ul className="p-2">
+                      {route.children.map((child) => (
+                        <li key={child.name}>
+                          <a href={child.path}>{child.name}</a>
+                        </li>
+                      ))}
+                    </ul>
                   </li>
                 )
               )}
             </ul>
           </div>
+          <a className="text-xl font-bold cursor-pointern text-nowrap" href="#">
+            <span className="text-white bg-green-700 rounded-md p-1">NG</span>
+            -LPRES
+          </a>
         </div>
-      </nav>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            {navRoutes.map((route) =>
+              !route.children ? (
+                <li key={route.name}>
+                  <a href={route.path}>{route.name}</a>
+                </li>
+              ) : (
+                <li key={route.name}>
+                  <details>
+                    <summary>{route.name}</summary>
+                    <ul className="p-1 w-[200px]">
+                      {route.children.map((child) => (
+                        <li key={child.name}>
+                          <a href={child.path}>{child.name}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              )
+            )}
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <a className="btn">Projects</a>
+        </div>
+      </div>
     </div>
   );
 };
