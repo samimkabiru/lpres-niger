@@ -9,7 +9,7 @@ import {
 
 const ValueChainsShowcase = () => {
   const valueChains = [
-    { type: 'empty', position: 'left' },
+    { type: 'empty', position: 'left', emptyTypeId: 1 },
     {
       name: 'poultry',
       icon: <GiRooster />,
@@ -53,7 +53,7 @@ const ValueChainsShowcase = () => {
         'The pork value chain will receive dedicated attention, with a focus on optimizing production and addressing key challenges.',
       delay: 200,
     },
-    { type: 'empty', position: 'right' },
+    { type: 'empty', position: 'right', emptyTypeId: 2 },
   ];
 
   return (
@@ -78,6 +78,7 @@ const ValueChainsShowcase = () => {
           </div>
         ) : (
           <div
+            key={chain.emptyTypeId}
             className={`border-dashed border-2 border-green-700 w-3xl ${
               chain.position === 'left'
                 ? 'justify-self-end mr-10'

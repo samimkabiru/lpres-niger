@@ -8,16 +8,33 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
+import farmHens from '../assets/farm-hens.jpg';
+import govBago from '../assets/gov-bago.png';
 
 const ProjectsCarousel = () => {
-  // const projects = [{ image: '#' }];
+  const projects = [
+    {
+      image: govBago,
+      title:
+        'Niger State to End Direct Supply of Live Cows, Launch Meat Processing for Southwest Markets',
+      location: 'mokwa',
+      status: 'in progress',
+    },
+    {
+      image: govBago,
+      title:
+        'Niger State to End Direct Supply of Live Cows, Launch Meat Processing for Southwest Markets',
+      location: 'mokwa',
+      status: 'in progress',
+    },
+  ];
 
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
   return (
-    <div className="relative overflow-hidden">
+    <div className=" overflow-hidden">
       <Carousel
-        className="w-full max-w-[800px] mx-auto"
+        className="w-full max-w-[850px] mx-auto "
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}

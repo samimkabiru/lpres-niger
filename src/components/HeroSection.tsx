@@ -21,13 +21,13 @@ const HeroSection = () => {
         <div>
           <button
             type="button"
-            className="focus:outline-none text-white bg-green-700 hover:bg-green-900 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 transition-colors duration-200 cursor-pointer"
+            className="text-white bg-green-700 hover:bg-green-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 transition-colors duration-200 cursor-pointer"
           >
             Our Projects
           </button>
           <button
             type="button"
-            className="text-white hover:text-green-800 border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center cursor-pointer me-2 mb-2 transition-colors duration-200"
+            className="text-white hover:text-green-800 border border-white hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center cursor-pointer me-2 mb-2 transition-colors duration-200"
           >
             More About Us
           </button>

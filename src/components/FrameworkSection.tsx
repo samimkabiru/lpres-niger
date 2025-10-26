@@ -93,8 +93,8 @@ const FrameworkSection = () => {
         />
       </div>
 
-      <div className="py-[80px]" data-aos="fade-up" data-aos-duration="700">
-        <div className="max-w-[650px] mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-sm text-left">
+      <div className="py-[75px]" data-aos="fade-up" data-aos-duration="700">
+        <div className="max-w-[650px] mx-auto p-3 bg-white border border-gray-200 rounded-lg shadow-sm text-left">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-green-800 capitalize">
             we finish what we start
           </h5>
@@ -108,7 +108,7 @@ const FrameworkSection = () => {
           </p>
           <a
             href="#"
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none transition-colors focus:ring-green-300"
+            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-sm text-white bg-green-700  hover:bg-green-800 focus:outline-none transition-colors"
           >
             View all projects
             <svg
