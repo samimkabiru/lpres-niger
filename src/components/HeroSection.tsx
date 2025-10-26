@@ -4,7 +4,11 @@ const HeroSection = () => {
       {/* overlay */}
       <div className="absolute inset-0 bg-black/60 -translate-z-1"></div>
 
-      <div className="text-center py-[85px] text-white max-w-4xl mx-auto translate-z-1">
+      <div
+        className="text-center py-[85px] text-white max-w-4xl mx-auto translate-z-1"
+        data-aos="zoom-in"
+        data-aos-delay={100}
+      >
         <h1 className="text-4xl font-semibold mb-5 md:text-5xl lg:text-6xl pb-4">
           Empowering Livestock Productivity for a Sustainable Future
         </h1>

@@ -6,10 +6,25 @@ import farmRoosters from '../assets/farm-roosters.jpg';
 
 const FrameworkSection = () => {
   const statistics = [
-    { name: 'duration', details: '6 Years', icon: <GiDuration /> },
-    { name: 'eligible states', details: '36', icon: <MdOutlineVpnLock /> },
-    { name: 'project cost', details: '$500M', icon: <GiMoneyStack /> },
-    { name: 'components', details: '5', icon: <IoLogoWebComponent /> },
+    { name: 'duration', details: '6 Years', icon: <GiDuration />, delay: 100 },
+    {
+      name: 'eligible states',
+      details: '36',
+      icon: <MdOutlineVpnLock />,
+      delay: 150,
+    },
+    {
+      name: 'project cost',
+      details: '$500M',
+      icon: <GiMoneyStack />,
+      delay: 200,
+    },
+    {
+      name: 'components',
+      details: '5',
+      icon: <IoLogoWebComponent />,
+      delay: 250,
+    },
   ];
 
   return (
@@ -23,6 +38,8 @@ const FrameworkSection = () => {
           <div
             key={stat.name}
             className="stat p-5 rounded-3xl bg-gray-100 grow z-10"
+            data-aos="fade-up"
+            data-aos-delay={stat.delay}
           >
             <span className="w-[50px] h-[50px] mb-5 bg-green-600 justify-self-center text-white text-3xl inline-flex justify-center items-center rounded-full">
               {stat.icon}
@@ -76,7 +93,7 @@ const FrameworkSection = () => {
         />
       </div>
 
-      <div className="py-[80px]">
+      <div className="py-[80px]" data-aos="fade-up" data-aos-duration="700">
         <div className="max-w-[650px] mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-sm text-left">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-green-800 capitalize">
             we finish what we start

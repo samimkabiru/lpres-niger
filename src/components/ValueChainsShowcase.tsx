@@ -15,36 +15,43 @@ const ValueChainsShowcase = () => {
       icon: <GiRooster />,
       description:
         'The Poultry value chain will receive adequate attention from L-PRES.',
+      delay: 100,
     },
+
     {
       name: 'cattle',
       icon: <GiCow />,
       description:
         'The beef cattle value chain is a catalyst for local economic growth, fostering the development of indigenous industries.',
+      delay: 150,
     },
     {
       name: 'waste management',
       icon: <GiRecycle />,
       description:
         'Effective waste management, when handled professionally, can not only contribute to environmental sustainability.',
+      delay: 200,
     },
     {
       name: 'micro livestock',
       icon: <GiBee />,
       description:
         'The beekeeping and honey-bee wax value chain will be supported.',
+      delay: 100,
     },
     {
       name: 'sheep & goat',
       icon: <GiGoat />,
       description:
         'L-PRES will support smallholder sheep and goat marketing systems, tackle.',
+      delay: 150,
     },
     {
       name: 'pigs',
       icon: <GiPig />,
       description:
         'The pork value chain will receive dedicated attention, with a focus on optimizing production and addressing key challenges.',
+      delay: 200,
     },
     { type: 'empty', position: 'right' },
   ];
@@ -56,6 +63,8 @@ const ValueChainsShowcase = () => {
           <div
             key={chain.name}
             className="max-w-sm mx-auto py-4 px-2 bg-white border border-gray-200 rounded-lg shadow-sm hover:transform-[scale(1.1)] transition-transform cursor-pointer"
+            data-aos="zoom-in-up"
+            data-aos-delay={chain.delay}
           >
             <span className="inline-block text-5xl text-green-700 mb-3">
               {chain.icon}
