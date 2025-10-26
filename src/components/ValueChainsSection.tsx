@@ -7,7 +7,7 @@ import nigerStateSeal from '../assets/niger-state-seal.jpg';
 const ValueChainsSection = () => {
   return (
     <div className="text-center">
-      <div className="bg-green-700 py-10 px-4 rounded-b-[100px]">
+      <div className="bg-green-700 py-10 px-4 rounded-b-[80px]">
         <div className="max-w-[900px] mx-auto">
           <h2 className="text-3xl font-semibold lg:text-4xl pb-8 text-lime-100 border-b-[1px] border-lime-100 lg:border-0 ">
             Welcome to Livestock Productivity & Resilience Project (L-PRES)
@@ -32,13 +32,13 @@ const ValueChainsSection = () => {
           </div>
         </div>
         <div className="flex items-center justify-center gap-4">
-          <img className="w-[20%] md:w-[16%]" src={fmafs} alt="logo" />
+          <img className="w-[27%] sm:w-[16%]" src={fmafs} alt="logo" />
           <img
             src={nigerStateSeal}
-            className="w-[50px] h-[50px] rounded-full object-cover md:w-[100px] md:h-[100px]"
+            className="w-[50px] h-[50px] rounded-full object-cover sm:w-[100px] sm:h-[100px]"
             alt=""
           />
-          <img className="w-[20%] md:w-[16%]" src={worldBank} alt="logo" />
+          <img className="w-[27%] sm:w-[16%]" src={worldBank} alt="logo" />
         </div>
       </div>
       <div className="py-[100px] px-4 text-left text-gray-600 grid items-center gap-10 max-w-[1024px] mx-auto lg:grid-cols-2">
