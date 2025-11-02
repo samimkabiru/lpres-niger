@@ -1,12 +1,12 @@
+import FAQS from '@/components/FAQS';
+import FrameworkSection from '@/components/FrameworkSection';
+import HeroSection from '@/components/HeroSection';
+import ValueChainsSection from '@/components/ValueChainsSection';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import FrameworkSection from './components/FrameworkSection';
-import HeaderSection from './components/HeaderSection';
-import ValueChainsSection from './components/ValueChainsSection';
-import FooterSection from './components/FooterSection';
 import { FaArrowUp } from 'react-icons/fa';
 
-const App = () => {
+const Homepage = () => {
   AOS.init({
     duration: 500,
     once: false,
@@ -21,12 +21,12 @@ const App = () => {
       >
         <FaArrowUp />
       </button>
-      <HeaderSection />
+      <HeroSection />
       <ValueChainsSection />
       <FrameworkSection />
-      <FooterSection />
+      <FAQS />
     </div>
   );
 };
 
-export default App;
+export default Homepage;
