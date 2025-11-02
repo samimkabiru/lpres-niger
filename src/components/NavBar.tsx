@@ -39,7 +39,7 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={-1}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-md dropdown-content bg-white/60 backdrop-blur-md rounded-box z-1 mt-3 w-[270px] p-2 shadow"
             >
               {navRoutes.map((route) =>
                 !route.children ? (
@@ -48,14 +48,16 @@ const NavBar = () => {
                   </li>
                 ) : (
                   <li key={route.name}>
-                    <p>{route.name}</p>
-                    <ul className="p-2">
-                      {route.children.map((child) => (
-                        <li key={child.name}>
-                          <a href={child.path}>{child.name}</a>
-                        </li>
-                      ))}
-                    </ul>
+                    <details>
+                      <summary>{route.name}</summary>
+                      <ul className="p-2">
+                        {route.children.map((child) => (
+                          <li key={child.name}>
+                            <a href={child.path}>{child.name}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
                   </li>
                 )
               )}
@@ -77,7 +79,7 @@ const NavBar = () => {
                 <li key={route.name}>
                   <details>
                     <summary>{route.name}</summary>
-                    <ul className="p-1 w-[200px]">
+                    <ul className="p-1 w-[200px] bg-white/60 backdrop-blur-md">
                       {route.children.map((child) => (
                         <li key={child.name}>
                           <a href={child.path}>{child.name}</a>

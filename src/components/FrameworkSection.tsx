@@ -1,8 +1,8 @@
 import { GiDuration, GiMoneyStack } from 'react-icons/gi';
 import { IoLogoWebComponent } from 'react-icons/io5';
 import { MdOutlineVpnLock } from 'react-icons/md';
-import ProjectsCarousel from './ProjectsCarousel';
 import farmRoosters from '../assets/farm-roosters.jpg';
+import ProjectsCarousel from './ProjectsCarousel';
 
 const FrameworkSection = () => {
   const statistics = [

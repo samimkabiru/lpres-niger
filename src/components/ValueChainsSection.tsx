@@ -3,13 +3,15 @@ import fmafs from '../assets/fmafs.webp';
 import worldBank from '../assets/world-bank.webp';
 import LPRESTeam from '../assets/lpres-team.jpg';
 import nigerStateSeal from '../assets/niger-state-seal.jpg';
+import LPRESCalendar from './LPRESCalendar';
 
 const ValueChainsSection = () => {
   return (
     <div className="text-center">
-      <div className="bg-green-700 py-10 px-4 rounded-b-[80px]">
+      <LPRESCalendar />
+      <div className="bg-green-700 py-10 px-4 rounded-[60px]">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-3xl font-semibold lg:text-4xl pb-8 text-lime-100 border-b-[1px] border-lime-100 lg:border-0 ">
+          <h2 className="text-3xl font-semibold pb-8 text-lime-100 border-b-[1px] border-lime-100 lg:border-0 lg:text-4xl">
             Welcome to Livestock Productivity & Resilience Project (L-PRES)
           </h2>
           <div className="text-white border-b-[1px] border-lime-100 pb-10 my-8">

@@ -9,6 +9,7 @@ import fmafs from '../assets/fmafs-b.webp';
 import worldBank from '../assets/world-bank-b.webp';
 
 const FooterSection = () => {
+  const date = new Date();
   const FAQS = [
     {
       value: 'item-1',
@@ -51,7 +52,7 @@ const FooterSection = () => {
                 <AccordionTrigger className="text-lg hover:underline-offset-3 text-green-700 sm:text-xl">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="flex flex-col gap-4 text-balance text-[15px] sm:text-[17px]">
+                <AccordionContent className="flex flex-col gap-4 text-balance text-[15px] text-gray-600 sm:text-[17px]">
                   <p>{faq.answer}</p>
                 </AccordionContent>
               </AccordionItem>
@@ -175,8 +176,8 @@ const FooterSection = () => {
           <div className="p-4 mt-3">
             <div className="border-t-2 pt-4 border-gray-400">
               <p className="text-[14px] text-gray-700">
-                &copy; 2025 Livestock Productivity & Resilience Support Project
-                (L-PRES). All rights reserved.
+                &copy; {date.getFullYear()} Livestock Productivity & Resilience
+                Support Project (L-PRES). All rights reserved.
               </p>
             </div>
           </div>
