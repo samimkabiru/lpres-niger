@@ -47,7 +47,7 @@ const Aboutpage = () => {
 
   return (
     <div>
-      <div className="min-h-screen max-w-[1140px] mx-auto px-4 py-12 grid items-center gap-10 lg:grid-cols-2">
+      <div className="max-w-[1140px] mx-auto px-4 py-12 grid items-center gap-10 lg:grid-cols-2">
         <div className="relative rounded-lg overflow-hidden">
           {/* overlay */}
           <div className="absolute inset-0 bg-black/20"></div>
