@@ -7,6 +7,7 @@ import {
 
 import fmafs from '../assets/fmafs-b.webp';
 import worldBank from '../assets/world-bank-b.webp';
+import { Link } from 'react-router-dom';
 
 const FAQS = () => {
   const FAQS = [
@@ -57,12 +58,12 @@ const FAQS = () => {
               </AccordionItem>
             ))}
           </Accordion>
-          <a
-            href="#"
+          <Link
+            to="faqs"
             className="btn btn-outline btn-success mt-3 border-2 text-green-700 border-green-700 hover:text-white hover:bg-green-700"
           >
             see more FAQ'S
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col items-center pb-[50px]">
           <p className="uppercase tracking-[10px] text-[15px] text-center text-gray-700 mb-5 sm:text-3xl">

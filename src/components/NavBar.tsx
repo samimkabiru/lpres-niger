@@ -8,12 +8,12 @@ const NavBar = () => {
       path: '#',
       children: [
         { name: 'L-Pres', path: '/about' },
-        { name: 'The L-Pres Team', path: '#' },
+        { name: 'The L-Pres Team', path: '/team' },
       ],
     },
-    { name: 'Events', path: '#' },
-    { name: 'News', path: '#' },
-    { name: 'Contact', path: '#' },
+    { name: 'Events', path: '/events' },
+    { name: 'News', path: '/news' },
+    { name: 'Contact', path: 'contact' },
     { name: 'Staff Mail', path: '#' },
   ];
 
@@ -65,10 +65,13 @@ const NavBar = () => {
               )}
             </ul>
           </div>
-          <a className="text-xl font-bold cursor-pointern text-nowrap" href="#">
+          <Link
+            to="/"
+            className="text-xl font-bold cursor-pointern text-nowrap"
+          >
             <span className="text-white bg-green-700 rounded-md p-1">NG</span>
             -LPRES
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 z-10">
@@ -95,7 +98,9 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Projects</a>
+          <Link to="/projects" className="btn">
+            Projects
+          </Link>
         </div>
       </div>
     </div>

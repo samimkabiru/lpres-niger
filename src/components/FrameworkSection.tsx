@@ -93,7 +93,7 @@ const FrameworkSection = () => {
         />
       </div>
 
-      <div className="py-[75px]" data-aos="fade-up" data-aos-duration="700">
+      <div className="py-[75px]" data-aos="fade-up" data-aos-duration="400">
         <div className="max-w-[650px] mx-auto p-3 bg-white border border-gray-200 rounded-lg shadow-sm text-left">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-green-800 capitalize">
             we finish what we start
