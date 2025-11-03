@@ -1,7 +1,7 @@
-import { Outlet } from 'react-router';
 import AOS from 'aos';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
+import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
   AOS.init({
