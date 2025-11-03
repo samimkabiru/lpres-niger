@@ -1,8 +1,14 @@
+import { Outlet } from 'react-router';
+import AOS from 'aos';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
-import { Outlet } from 'react-router';
 
 const Layout = () => {
+  AOS.init({
+    duration: 300,
+    once: false,
+    easing: 'ease-in',
+  });
   return (
     <div>
       <NavBar />

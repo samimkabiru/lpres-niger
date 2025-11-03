@@ -1,11 +1,13 @@
+import { Link } from 'react-router';
+
 const NavBar = () => {
   const navRoutes = [
-    { name: 'Home', path: '#' },
+    { name: 'Home', path: '/' },
     {
       name: 'About',
       path: '#',
       children: [
-        { name: 'L-Pres', path: '#' },
+        { name: 'L-Pres', path: '/about' },
         { name: 'The L-Pres Team', path: '#' },
       ],
     },
@@ -82,7 +84,7 @@ const NavBar = () => {
                     <ul className="p-1 w-[200px] bg-white/60 backdrop-blur-md">
                       {route.children.map((child) => (
                         <li key={child.name}>
-                          <a href={child.path}>{child.name}</a>
+                          <Link to={child.path}>{child.name}</Link>
                         </li>
                       ))}
                     </ul>

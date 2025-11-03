@@ -14,7 +14,7 @@ const LPRESCalendar = () => {
 
   return (
     <div className="py-[50px] px-4 overflow-hidden">
-      <h2 className="font-semibold text-green-700 text-3xl text-left md:text-4xl mb-5 md:text-center">
+      <h2 className="font-semibold text-green-900 text-3xl text-left md:text-4xl mb-5 md:text-center">
         L-PRES Events Calendar
       </h2>
       <p className="text-gray-600 max-w-[700px] mx-auto mb-5 text-left md:text-center">
