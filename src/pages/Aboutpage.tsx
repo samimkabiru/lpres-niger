@@ -27,21 +27,40 @@ const Aboutpage = () => {
 
   const projectsComponents = [
     {
-      title:
-        'Component 1: Strengthening National Livestock Institutions For Improved Enabling Environment And Service Delivery',
-      details:
-        'The component will foster an enabling environment for public and private operators through improving the performance and service delivery of institutions involved in the livestock subsector and the livestock policy and regulation formulation, planning and programing. It will also support the creation of innovative multi-purpose Livestock Service Centers (LSCs). The component will benefit both producers and other value chain actors and provide the enabling platform for sustainable investment in Component 2.',
+      title: 'Component 1: Institutional and Innovation System Strengthening',
+      details: [
+        'Policy formulation and planning',
+        'Capacity building for livestock officers',
+        'Strengthening animal health and husbandry services',
+      ],
     },
     {
-      title: 'Component 2: Enhancement Of Value Chain Performance',
-      details:
-        'This component aims to enhance participation of smallholder producers and other private sector operators all along the selected VCs under a PPP arrangement. It will support activities to improve access to critical knowledge, services, inputs, equipment, infrastructure investments, as well as provision of corresponding financing for investment initiatives in the form of matching grants. These investment initiatives (subprojects) will be demand-driven, selected through competitive process. Their business cases will need to be clearly demonstrated and intrinsically viable economically. Activities selected will need to consider reducing the vulnerability of livestock to changing climate. The Project-selected VCs will be considered sequentially. Component 2 will focus on three priority livestock VCs (cattle - dairy and beef - sheep, goat, and poultry) in the first three years. The three other priority VCs (hides and skins, pigs, and honey) will be added from the third year onward to the extent of their ability to improve food security, nutrition, and generate viable investment opportunities.',
+      title: 'Component 2: Livestock Value Chain Enhancement',
+      details: [
+        'Market development and linkages',
+        'Access to finance and investment support',
+        'Livestock Service Centers rehabilitation',
+      ],
     },
     {
-      title:
-        'Component 3: Crisis Prevention And Management, Conflict Mitigation And Peace Building, And Project Coordination',
-      details:
-        'The aim of this component is threefold: (i) ensuring that GoN is better equipped to respond to livestock crises and emergencies; (ii) helping mitigate conflicts and build peace in the context of current insecurity where pastoralist and sedentary producers have often diverging interests; and (iii) establishing appropriate coordination, Monitoring and Evaluation (M&E), and communication regarding Project implementation.',
+      title: 'Component 3: Crisis Prevention and Conflict Mitigation',
+      details: [
+        'Natural resource management',
+        'Pasture improvement and grazing reserves',
+      ],
+    },
+    {
+      title: 'Component 4: Project Coordination and Management',
+      details: [
+        'Monitoring & evaluation',
+        'Transparency and sustainability measures',
+      ],
+    },
+    {
+      title: 'Component 5: Contingency Emergency Response',
+      details: [
+        'Rapid response to disease outbreaks or climate-related shocks',
+      ],
     },
   ];
 
@@ -59,20 +78,20 @@ const Aboutpage = () => {
           </h1>
           <div className="text-gray-600">
             <p className="py-6">
-              L-PRES is a 6 Year Project with Development Objective (PDO) to
-              improve livestock productivity, resilience and commercialization
-              of selected value chains and to strengthen the country's capacity
-              to respond to an eligible crisis or emergency.
+              The Livestock Productivity and Resilience Support Project (L-PRES)
+              is a six-year (2023-2028) World Bank-assisted initiative
+              implemented in 20 Nigerian states. Niger State focuses on three
+              key value chains: poultry, sheep & goats, and beef cattle.
+            </p>
+            <p className="pb-6">
+              The goal of the project is to improve livestock productivity,
+              strengthen resilience, and enhance commercialization through
+              sustainable interventions that uplift farmers and communities.
             </p>
             <p>
-              Livestock is vital to Nigeria's economy and poverty alleviation.
-              It employs 30 percent of the rural population but accounts only
-              for less than 10 percent of the Agricultural GDP and 2-3 percent
-              of the National GDP , which highlights the sub-sector
-              under-development. Livestock provides increased significant
-              economic stability to rural households in the form of cash
-              buffers, as capital reserves, and creates a hedge against
-              inflation.
+              Our key objectives are to improve animal health and breeding
+              services, strengthen market linkages and access to finance
+              Developing pastures and grazing reserves
             </p>
           </div>
         </div>
@@ -112,17 +131,21 @@ const Aboutpage = () => {
           transforming its livestock subsector.
         </p>
         <div className="join join-vertical bg-base-100 w-full">
-          {projectsComponents.map((project, index) => (
+          {projectsComponents.map((component, index) => (
             <div
               key={index}
               className="collapse collapse-arrow join-item border-base-300 border"
             >
               <input type="radio" name="my-accordion-4" defaultChecked />
-              <div className="collapse-title font-semibold text-green-900 lg:text-2xl">
-                {project.title}
+              <div className="collapse-title font-semibold text-green-900 lg:text-[22px]">
+                {component.title}
               </div>
               <div className="collapse-content text-sm lg:text-[16px] text-gray-600">
-                {project.details}
+                <ul className="list-disc pl-5">
+                  {component.details.map((detail) => (
+                    <li className="my-1">{detail}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
