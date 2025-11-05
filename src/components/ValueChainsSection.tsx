@@ -1,9 +1,9 @@
-import ValueChainsShowcase from './ValueChainsShowcase';
 import fmafs from '../assets/fmafs.webp';
-import worldBank from '../assets/world-bank.webp';
 import LPRESTeam from '../assets/lpres-team.jpg';
 import nigerStateSeal from '../assets/niger-state-seal.jpg';
+import worldBank from '../assets/world-bank.webp';
 import LPRESCalendar from './LPRESCalendar';
+import ValueChainsShowcase from './ValueChainsShowcase';
 
 const ValueChainsSection = () => {
   return (

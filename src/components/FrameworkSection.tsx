@@ -3,6 +3,7 @@ import { IoLogoWebComponent } from 'react-icons/io5';
 import { MdOutlineVpnLock } from 'react-icons/md';
 import farmRoosters from '../assets/farm-roosters.jpg';
 import ProjectsCarousel from './ProjectsCarousel';
+import MileStones from './MileStones';
 
 const FrameworkSection = () => {
   const statistics = [
@@ -130,6 +131,7 @@ const FrameworkSection = () => {
         </div>
       </div>
       <ProjectsCarousel />
+      <MileStones />
     </div>
   );
 };
