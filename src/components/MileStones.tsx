@@ -59,7 +59,7 @@ const MileStones = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-start mb-10 text-left shadow-sm text-gray-600 rounded-3xl p-4 md:text-end">
+              <div className="timeline-start mb-10 text-left shadow-sm border-1 text-gray-600 rounded-3xl p-4 md:text-end">
                 <span className="text-3xl text-green-800 inline-block">
                   {milestone.icon}
                 </span>
@@ -87,7 +87,7 @@ const MileStones = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-end text-gray-600 text-left shadow-sm rounded-3xl p-4 mb-10">
+              <div className="timeline-end text-gray-600 text-left shadow-sm border-1 rounded-3xl p-4 mb-10">
                 <span className="text-3xl text-green-800 inline-block">
                   {milestone.icon}
                 </span>

@@ -2,6 +2,7 @@ import fmafs from '../assets/fmafs.webp';
 import LPRESTeam from '../assets/lpres-team.jpg';
 import nigerStateSeal from '../assets/niger-state-seal.jpg';
 import worldBank from '../assets/world-bank.webp';
+import FromDanladiMohammed from './FromDanladiMohammed';
 import LPRESCalendar from './LPRESCalendar';
 import ValueChainsShowcase from './ValueChainsShowcase';
 
@@ -70,6 +71,7 @@ const ValueChainsSection = () => {
         <img className="w-full rounded-3xl" src={LPRESTeam} alt="L-PRES Team" />
       </div>
       <ValueChainsShowcase />
+      <FromDanladiMohammed />
     </div>
   );
 };
