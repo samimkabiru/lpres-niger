@@ -44,7 +44,7 @@ const MileStones = () => {
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {milestones.map((milestone) =>
           milestone.position === 'start' ? (
-            <li key={milestone.title}>
+            <li key={milestone.title} data-aos="zoom-in">
               <div className="timeline-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const MileStones = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-start mb-10 text-left shadow-sm rounded-3xl p-4 md:text-end">
+              <div className="timeline-start mb-10 text-left shadow-sm text-gray-600 rounded-3xl p-4 md:text-end">
                 <span className="text-3xl text-green-800 inline-block">
                   {milestone.icon}
                 </span>
@@ -71,7 +71,7 @@ const MileStones = () => {
               <hr />
             </li>
           ) : (
-            <li key={milestone.title}>
+            <li key={milestone.title} data-aos="zoom-in">
               <hr />
               <div className="timeline-middle">
                 <svg
