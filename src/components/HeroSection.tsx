@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const HeroSection = () => {
   return (
     <div className="relative py-10 px-5 bg-[url('/gov-bago.png')] bg-cover bg-center">
@@ -18,18 +20,18 @@ const HeroSection = () => {
           World Bank-supported L-PRES project.
         </p>
         <div>
-          <button
-            type="button"
+          <Link
             className="text-white bg-green-700 hover:bg-green-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 transition-colors duration-200 cursor-pointer"
+            to="/projects"
           >
             Our Projects
-          </button>
-          <button
-            type="button"
+          </Link>
+          <Link
             className="text-white hover:text-green-800 border border-white hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center cursor-pointer me-2 mb-2 transition-colors duration-200"
+            to="/about"
           >
             More About Us
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import farmers from '../assets/farmers.jpg';
+import lpresLogo from '../assets/lpres-about-logo.jpeg';
 import bgCock from '../assets/bg-cock.jpg';
 import bgSheep from '../assets/bg-sheeps.jpg';
 import bgHen from '../assets/bg-hen.jpg';
@@ -67,10 +67,8 @@ const Aboutpage = () => {
   return (
     <div>
       <div className="max-w-[1140px] mx-auto px-4 py-12 grid items-center gap-10 lg:grid-cols-2">
-        <div className="relative rounded-lg overflow-hidden">
-          {/* overlay */}
-          <div className="absolute inset-0 bg-black/20"></div>
-          <img src={farmers} className="shadow-2xl w-full" />
+        <div className="rounded-lg overflow-hidden">
+          <img src={lpresLogo} className="shadow-2xl w-full object-cover" />
         </div>
         <div>
           <h1 className="text-3xl font-semibold text-green-900 lg:text-5xl">
@@ -142,8 +140,10 @@ const Aboutpage = () => {
               </div>
               <div className="collapse-content text-sm lg:text-[16px] text-gray-600">
                 <ul className="list-disc pl-5">
-                  {component.details.map((detail) => (
-                    <li className="my-1">{detail}</li>
+                  {component.details.map((detail, detailIndex) => (
+                    <li className="my-1" key={detailIndex}>
+                      {detail}
+                    </li>
                   ))}
                 </ul>
               </div>

@@ -2,6 +2,7 @@ import FAQS from '@/components/FAQS';
 import FrameworkSection from '@/components/FrameworkSection';
 import HeroSection from '@/components/HeroSection';
 import ValueChainsSection from '@/components/ValueChainsSection';
+import Voices from '@/components/Voices';
 import 'aos/dist/aos.css';
 import { FaArrowUp } from 'react-icons/fa';
 
@@ -17,6 +18,7 @@ const Homepage = () => {
       <HeroSection />
       <ValueChainsSection />
       <FrameworkSection />
+      <Voices />
       <FAQS />
     </div>
   );
