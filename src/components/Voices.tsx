@@ -23,6 +23,7 @@ const Voices = () => {
           <div
             key={voice.name}
             className="shadow-sm border-1 rounded-4xl p-4 bg-gradient-to-br from-white/70 to-white/20 backdrop-blur-xl"
+            data-aos="fade-up"
           >
             <span className="text-4xl inline-block text-gray-300/50 mb-5">
               <FaQuoteLeft />

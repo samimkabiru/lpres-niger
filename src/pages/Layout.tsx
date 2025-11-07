@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
   AOS.init({
-    duration: 300,
+    duration: 400,
     once: false,
     easing: 'ease-in',
   });
