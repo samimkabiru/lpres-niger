@@ -1,25 +1,89 @@
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaPhone,
+  FaYoutube,
+} from 'react-icons/fa';
+import { FaLocationDot, FaSquareXTwitter } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   const date = new Date();
+  const contactInfo = [
+    {
+      icon: <FaLocationDot />,
+      type: 'text',
+      value:
+        'L-PRES Niger State Coordination Office PLOT 23 YUSUF DATTI ROAD F-LAYOUT',
+    },
+    {
+      icon: <FaLocationDot />,
+      type: 'text',
+      value: 'Minna, Niger State, Nigeria',
+    },
+    {
+      icon: <FaPhone />,
+      type: 'link',
+      label: 'Telephone',
+      value: 'tel:+11122233344455',
+    },
+    {
+      icon: <MdEmail />,
+      type: 'link',
+      label: 'Mail',
+      value: 'mailto:niger@lpresnigeria.gov.ng',
+    },
+  ];
+
+  const quickLinks = [
+    { label: 'About Us', path: '/about' },
+    { label: 'News', path: '/news' },
+    { label: 'Projects', path: '/projects' },
+  ];
+
+  const socialsIcons = [
+    { icon: <FaInstagram />, link: '#' },
+    { icon: <FaSquareXTwitter />, link: '#' },
+    { icon: <FaFacebookSquare />, link: '#' },
+    { icon: <FaYoutube />, link: '#' },
+  ];
 
   return (
     <footer className="bg-green-50 rounded-2xl backdrop-blur-md overflow-hidden">
       <div className="max-w-[1140px] mx-auto">
-        <div className="footer sm:footer-horizontal text-base-content p-4">
+        <div className="footer sm:footer-horizontal text-base-content text-sm p-4">
           <nav>
-            <h6 className="footer-title">Company</h6>
-            <a className="link link-hover">FAQ</a>
-            <a className="link link-hover">World Bank</a>
-            <a className="link link-hover">Ministry of Finance</a>
-            <a className="link link-hover">
-              Federal Ministry of Agriculture and Rural Development
-            </a>
+            <h6 className="footer-title">Contact Info</h6>
+            {contactInfo.map((info) =>
+              info.type === 'text' ? (
+                <div key={info.value} className="flex items-center my-1">
+                  <span className="text-lg text-green-950 mr-2">
+                    {info.icon}
+                  </span>
+                  <p>{info.value}</p>
+                </div>
+              ) : (
+                <a
+                  href={info.value}
+                  key={info.value}
+                  className="link link-hover flex my-1"
+                >
+                  <span className="text-lg text-green-950 mr-2">
+                    {info.icon}
+                  </span>
+                  {info.label}
+                </a>
+              )
+            )}
           </nav>
           <nav>
             <h6 className="footer-title">Company</h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Project</a>
-            <a className="link link-hover">News</a>
+            {quickLinks.map((link) => (
+              <a key={link.label} className="link link-hover" href={link.path}>
+                {link.label}
+              </a>
+            ))}
           </nav>
           <form>
             <h6 className="footer-title">Newsletter</h6>
@@ -38,54 +102,34 @@ const Footer = () => {
             </fieldset>
           </form>
         </div>
-        <div className="footer sm:footer-horizontal items-center justify-center p-4 rounded-2xl md:justify-normal">
+        <div className="footer items-center px-4 rounded-2xl sm:footer-horizontal md:justify-normal">
           <aside>
             <div className="text-xl font-bold cursor-pointern text-nowrap">
-              <span className="text-white bg-green-700 rounded-md p-1">NG</span>
-              -LPRES
+              <Link to="/">
+                <span className="text-white bg-green-700 rounded-md p-1">
+                  NG
+                </span>
+                -LPRES
+              </Link>
             </div>
           </aside>
           <nav>
-            <div className="grid grid-flow-col gap-4 text-green-700">
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
+            <div className="grid grid-flow-col gap-2 text-2xl text-green-700">
+              {socialsIcons.map(({ icon, link }, index) => (
+                <a
+                  key={index}
+                  className="cursor-pointer hover:text-green-900 transition-colors"
+                  href={link}
                 >
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                </svg>
-              </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                </svg>
-              </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                </svg>
-              </a>
+                  {icon}
+                </a>
+              ))}
             </div>
           </nav>
         </div>
         <div className="p-4 mt-3">
-          <div className="border-t-2 pt-4 border-gray-400">
-            <p className="text-[14px] text-gray-700">
+          <div className="border-t-1 pt-4 border-gray-400">
+            <p className="text-xs text-gray-700">
               &copy; {date.getFullYear()} Livestock Productivity & Resilience
               Support Project (L-PRES). All rights reserved.
             </p>
