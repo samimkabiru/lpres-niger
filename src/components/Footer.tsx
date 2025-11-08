@@ -58,7 +58,7 @@ const Footer = () => {
             {contactInfo.map((info) =>
               info.type === 'text' ? (
                 <div key={info.value} className="flex items-center my-1">
-                  <span className="text-lg text-green-950 mr-2">
+                  <span className="text-lg text-green-800 mr-2">
                     {info.icon}
                   </span>
                   <p>{info.value}</p>
@@ -69,7 +69,7 @@ const Footer = () => {
                   key={info.value}
                   className="link link-hover flex my-1"
                 >
-                  <span className="text-lg text-green-950 mr-2">
+                  <span className="text-lg text-green-800 mr-2">
                     {info.icon}
                   </span>
                   {info.label}

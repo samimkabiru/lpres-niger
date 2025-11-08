@@ -26,7 +26,7 @@ const LPRESTeampage = () => {
       image: habibaUsman,
     },
     {
-      name: 'Hussaini Garba Beji',
+      name: 'Dr. Hussaini Garba Beji',
       position: 'extension officer',
       image: hussainiGarba,
     },
@@ -46,7 +46,7 @@ const LPRESTeampage = () => {
       image: harunaAliyu,
     },
     {
-      name: 'Nma Baba Tailor',
+      name: 'Engr. Nama Baba Tailor',
       position: 'project engineer',
       image: babaTailor,
     },
@@ -66,7 +66,7 @@ const LPRESTeampage = () => {
       image: adamuIbrahim,
     },
     {
-      name: 'Abdullahi DanAsabe Yakolo',
+      name: 'Abdullahi DanAsabe Yakolo, (FCNA)',
       position: 'state project accountant',
       image: abdullahiDanasabe,
     },
@@ -111,11 +111,11 @@ const LPRESTeampage = () => {
               src={member.image}
               alt="fatima usman"
             />
-            <div className="absolute p-2 flex flex-col items-center rounded-3xl bottom-3 left-2 right-2 bg-gradient-to-r from-white/80 to-white/20 backdrop-blur-lg">
-              <p className="inline-block text-md py-[6px] px-4 mb-1 rounded-full bg-gray-800/20 backdrop-blur-lg font-semibold text-green-900">
+            <div className="absolute p-2 flex flex-col items-center rounded-3xl bottom-2 left-2 right-2 bg-gradient-to-r from-white/80 to-white/20 backdrop-blur-lg">
+              <p className="inline-block text-md text-center py-[6px] px-4 mb-1 rounded-full bg-green-300/5 backdrop-blur-lg font-semibold text-green-900">
                 {member.name}
               </p>
-              <p className="text-gray-700">{member.position}</p>
+              <p className="text-gray-700 capitalize">{member.position}</p>
             </div>
           </div>
         ))}
