@@ -31,7 +31,7 @@ const Footer = () => {
     {
       icon: <MdEmail />,
       type: 'link',
-      label: 'Mail',
+      label: 'Mail Us',
       value: 'mailto:niger@lpresnigeria.gov.ng',
     },
   ];
@@ -88,7 +88,9 @@ const Footer = () => {
           <form>
             <h6 className="footer-title">Newsletter</h6>
             <fieldset className="w-80">
-              <label>Enter your email address</label>
+              <label className="mb-2 inline-block">
+                Enter your email address
+              </label>
               <div className="join">
                 <input
                   type="text"
