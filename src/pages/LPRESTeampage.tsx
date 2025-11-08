@@ -112,7 +112,7 @@ const LPRESTeampage = () => {
               alt="fatima usman"
             />
             <div className="absolute p-2 flex flex-col items-center rounded-3xl bottom-3 left-2 right-2 bg-gradient-to-r from-white/80 to-white/20 backdrop-blur-lg">
-              <p className="inline-block text-md py-[6px] px-4 mb-1 rounded-full bg-gray-900/20 backdrop-blur-lg font-semibold text-green-900">
+              <p className="inline-block text-md py-[6px] px-4 mb-1 rounded-full bg-gray-800/20 backdrop-blur-lg font-semibold text-green-900">
                 {member.name}
               </p>
               <p className="text-gray-700">{member.position}</p>
