@@ -7,7 +7,6 @@ import 'aos/dist/aos.css';
 import { BiSupport } from 'react-icons/bi';
 import { FaArrowUp } from 'react-icons/fa';
 import { FaUserGear } from 'react-icons/fa6';
-import { MdOutlineSupportAgent } from 'react-icons/md';
 import { PiGearSixBold } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 
