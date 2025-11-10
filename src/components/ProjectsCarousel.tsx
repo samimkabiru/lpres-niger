@@ -1,4 +1,3 @@
-import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -6,49 +5,39 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import projects from '@/data/projects';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
+import ProjectCard from './ProjectCard';
 
-const ProjectsCarousel = () => {
-  // const projects = [
-  //   {
-  //     image: govBago,
-  //     title:
-  //       'Niger State to End Direct Supply of Live Cows, Launch Meat Processing for Southwest Markets',
-  //     location: 'mokwa',
-  //     status: 'in progress',
-  //   },
-  //   {
-  //     image: govBago,
-  //     title:
-  //       'Niger State to End Direct Supply of Live Cows, Launch Meat Processing for Southwest Markets',
-  //     location: 'mokwa',
-  //     status: 'in progress',
-  //   },
-  // ];
+interface Props {
+  orientation?: 'horizontal' | 'vertical';
+}
 
+const ProjectsCarousel = ({ orientation = 'horizontal' }: Props) => {
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
   return (
-    <div className=" overflow-hidden">
+    <div className="relative overflow-hidden">
       <Carousel
-        className="w-full max-w-[850px] mx-auto "
+        orientation={orientation}
+        className="w-full max-w-[900px] mx-auto "
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-        <CarouselContent className="-ml-1">
-          {Array.from({ length: 5 }).map((_, index) => (
+        <CarouselContent
+          className={`-ml-1 ${
+            orientation === 'vertical' ? 'h-[400px]' : 'h-auto'
+          }`}
+        >
+          {projects.map((project) => (
             <CarouselItem
-              key={index}
+              key={project.id}
               className="pl-1 md:basis-1/2 lg:basis-1/3"
             >
               <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-2xl font-semibold">{index + 1}</span>
-                  </CardContent>
-                </Card>
+                <ProjectCard project={project} />
               </div>
             </CarouselItem>
           ))}

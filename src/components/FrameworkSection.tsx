@@ -4,6 +4,7 @@ import { MdOutlineVpnLock } from 'react-icons/md';
 import farmRoosters from '../assets/farm-roosters.jpg';
 import MileStones from './MileStones';
 import ProjectsCarousel from './ProjectsCarousel';
+import { Link } from 'react-router-dom';
 
 const FrameworkSection = () => {
   const statistics = [
@@ -107,8 +108,8 @@ const FrameworkSection = () => {
             productivity, resilience, and commercialization across selected
             value chains.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/projects"
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-sm text-white bg-green-700  hover:bg-green-800 focus:outline-none transition-colors"
           >
             View all projects
@@ -127,7 +128,7 @@ const FrameworkSection = () => {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
       <ProjectsCarousel />

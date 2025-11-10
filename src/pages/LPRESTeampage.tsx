@@ -12,6 +12,7 @@ import abdullahiDanasabe from '../assets/abdullahi-danasabe.jpg';
 import usmanGarba from '../assets/usman-garba.jpg';
 import ibrahimMaimuna from '../assets/ibrahim-maimuna.jpg';
 import habibaMuazu from '../assets/habiba-muazu.jpg';
+import abdulmalikMuhammed from '../assets/abdulmalik-muhammed.jpeg';
 
 const LPRESTeampage = () => {
   const teamMembers = [
@@ -31,13 +32,18 @@ const LPRESTeampage = () => {
       image: hussainiGarba,
     },
     {
+      name: 'AbdulMalik J. Muhammed',
+      position: 'project admin officer',
+      image: abdulmalikMuhammed,
+    },
+    {
       name: 'Zakariyau Muhammad',
       position: 'value chain officer',
       image: zakariyauMuhammad,
     },
     {
-      name: 'Fatima Usman Abdullahi',
-      position: 'internal auditor',
+      name: 'Fatima Usman Abdullahi (FCA)',
+      position: 'project internal auditor',
       image: fatimaUsman,
     },
     {
@@ -109,7 +115,7 @@ const LPRESTeampage = () => {
               loading="lazy"
               className="w-full h-[300px] object-cover object-center"
               src={member.image}
-              alt="fatima usman"
+              alt={member.name}
             />
             <div className="absolute p-2 flex flex-col items-center rounded-3xl bottom-2 left-2 right-2 bg-gradient-to-r from-white/80 to-white/20 backdrop-blur-lg">
               <p className="inline-block text-md text-center py-[6px] px-4 mb-1 rounded-full bg-green-300/5 backdrop-blur-lg font-semibold text-green-900">

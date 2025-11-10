@@ -80,9 +80,9 @@ const Footer = () => {
           <nav>
             <h6 className="footer-title">Company</h6>
             {quickLinks.map((link) => (
-              <a key={link.label} className="link link-hover" href={link.path}>
+              <Link key={link.label} className="link link-hover" to={link.path}>
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <form>
@@ -119,6 +119,7 @@ const Footer = () => {
             <div className="grid grid-flow-col gap-2 text-2xl text-green-700">
               {socialsIcons.map(({ icon, link }, index) => (
                 <a
+                  target="_blank"
                   key={index}
                   className="cursor-pointer hover:text-green-900 transition-colors"
                   href={link}

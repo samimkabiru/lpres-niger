@@ -9,6 +9,7 @@ import Contactpage from './pages/Contactpage';
 import Projectspage from './pages/Projectspage';
 import Errorpage from './pages/Errorpage';
 import FAQSpage from './pages/FAQSpage';
+import ProjectsDetailspage from './pages/ProjectDetailspage';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: 'team', element: <LPRESTeampage /> },
       { path: 'contact', element: <Contactpage /> },
       { path: 'projects', element: <Projectspage /> },
+      { path: 'projects/:id', element: <ProjectsDetailspage /> },
       { path: 'faqs', element: <FAQSpage /> },
     ],
   },
