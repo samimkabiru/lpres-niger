@@ -14,7 +14,7 @@ const NavBar = () => {
     { name: 'Events', path: '/events' },
     { name: 'News', path: '/news' },
     { name: 'Contact', path: 'contact' },
-    { name: 'Staff Mail', path: '#' },
+    { name: 'Lay a Complaint', path: '#' },
   ];
 
   return (
@@ -46,7 +46,7 @@ const NavBar = () => {
               {navRoutes.map((route) =>
                 !route.children ? (
                   <li key={route.name}>
-                    <a href={route.path}>{route.name}</a>
+                    <Link to={route.path}>{route.name}</Link>
                   </li>
                 ) : (
                   <li key={route.name}>
@@ -55,7 +55,7 @@ const NavBar = () => {
                       <ul className="p-2">
                         {route.children.map((child) => (
                           <li key={child.name}>
-                            <a href={child.path}>{child.name}</a>
+                            <Link to={child.path}>{child.name}</Link>
                           </li>
                         ))}
                       </ul>
@@ -78,7 +78,7 @@ const NavBar = () => {
             {navRoutes.map((route) =>
               !route.children ? (
                 <li key={route.name}>
-                  <a href={route.path}>{route.name}</a>
+                  <Link to={route.path}>{route.name}</Link>
                 </li>
               ) : (
                 <li key={route.name}>

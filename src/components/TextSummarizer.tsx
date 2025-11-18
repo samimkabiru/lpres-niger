@@ -1,13 +1,13 @@
 interface Props {
   children: string;
+  limit?: number;
 }
 
-const TextSummarizer = ({ children }: Props) => {
-  let limit = 50;
+const TextSummarizer = ({ children, limit = 50 }: Props) => {
   const visibleText =
     children.length <= limit ? children : children.substring(0, limit) + '...';
 
-  return <div>{visibleText}</div>;
+  return <p>{visibleText}</p>;
 };
 
 export default TextSummarizer;

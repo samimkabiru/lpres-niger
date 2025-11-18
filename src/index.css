@@ -9,6 +9,10 @@
   box-shadow: 0 3px rgb(0, 153, 0);
 }
 
+.news-details {
+  column-rule: 3px solid lightgray;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

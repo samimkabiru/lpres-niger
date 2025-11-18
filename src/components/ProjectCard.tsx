@@ -1,11 +1,11 @@
-import { FaLocationDot } from 'react-icons/fa6';
+import type { Project } from '@/data/projects';
+import { FaArrowRight } from 'react-icons/fa';
 import { MdOutlinePendingActions } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+import ProjectLocation from './ProjectLocation';
+import ProjectStatusBadge from './ProjectStatusBadge';
 import TextSummarizer from './TextSummarizer';
 import { Card } from './ui/card';
-import type { Project } from '@/data/projects';
-import ProjectStatusBadge from './ProjectStatusBadge';
-import { Link } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
 
 interface Props {
   project: Project;
@@ -27,12 +27,7 @@ const ProjectCard = ({
         <h2 className="text-[17px] font-semibold">
           <TextSummarizer>{title}</TextSummarizer>
         </h2>
-        <div className="flex items-center mt-2">
-          <span className="inline-block text-md mr-1 text-green-800">
-            <FaLocationDot />
-          </span>
-          <p>{`${location.city}, ${location.state} state`}</p>
-        </div>
+        <ProjectLocation location={location} />
         <div className="flex justify-between items-center">
           <div className="flex items-center mt-2">
             <span className="inline-block text-md mr-1 text-green-800">

@@ -1,4 +1,5 @@
-import ProjectsCarousel from '@/components/ProjectsCarousel';
+import ProjectLocation from '@/components/ProjectLocation';
+import UtilityCarousel from '@/components/ProjectsCarousel';
 import ProjectStatusBadge from '@/components/ProjectStatusBadge';
 
 const ProjectsDetailspage = () => {
@@ -11,6 +12,9 @@ const ProjectsDetailspage = () => {
         </h1>
         <div className="mb-3">
           <ProjectStatusBadge status="completed" />
+        </div>
+        <div className="mb-2">
+          <ProjectLocation location={{ city: 'minna', state: 'niger' }} />
         </div>
         <p className="text-gray-600 mb-3">
           Kogi State Kicks Off the Implementation of Private Veterinary Practice
@@ -69,7 +73,7 @@ const ProjectsDetailspage = () => {
           <h2 className="text-green-900 font-semibold text-[27px] text-3xl mb-5">
             Explore other projects
           </h2>
-          <ProjectsCarousel orientation="vertical" />
+          <UtilityCarousel orientation="vertical" />
         </div>
       </div>
     </div>

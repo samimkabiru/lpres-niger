@@ -3,7 +3,7 @@ import { IoLogoWebComponent } from 'react-icons/io5';
 import { MdOutlineVpnLock } from 'react-icons/md';
 import farmRoosters from '../assets/farm-roosters.jpg';
 import MileStones from './MileStones';
-import ProjectsCarousel from './ProjectsCarousel';
+import UtilityCarousel from './ProjectsCarousel';
 import { Link } from 'react-router-dom';
 
 const FrameworkSection = () => {
@@ -131,7 +131,7 @@ const FrameworkSection = () => {
           </Link>
         </div>
       </div>
-      <ProjectsCarousel />
+      <UtilityCarousel />
       <MileStones />
     </div>
   );

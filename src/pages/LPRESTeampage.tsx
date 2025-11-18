@@ -109,7 +109,7 @@ const LPRESTeampage = () => {
         {teamMembers.map((member) => (
           <div
             key={member.name}
-            className="rounded-3xl overflow-hidden relative shadow-sm w-full max-w-[400px] mx-auto"
+            className="rounded-3xl overflow-hidden relative shadow-sm w-full max-w-[320px] mx-auto"
           >
             <img
               loading="lazy"
