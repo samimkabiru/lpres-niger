@@ -1,33 +1,15 @@
-import { RiBankFill } from 'react-icons/ri';
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
-
 const LPRESNigerMap = () => {
   return (
-    <MapContainer
-      className="rounded-2xl relative"
-      center={[9.63489, 6.54537]}
-      zoom={100}
-      style={{ height: '350px', width: '100%' }}
-    >
-      <TileLayer
-        url="https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
-        subdomains={['mt0', 'mt1', 'mt2', 'mt3']}
-        attribution="© Google Maps"
-      />
-
-      <Marker position={[9.63489, 6.54537]}>
-        <Popup>
-          <div className="sm:flex sm:items-center">
-            <div className="inline-flex w-7 h-7 rounded-full bg-green-900 text-white justify-center items-center mr-3">
-              <RiBankFill />
-            </div>
-            <p className="text-wrap md:text-nowrap">
-              L-PRES Niger State Coordination Office
-            </p>
-          </div>
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d749.0626236930988!2d6.5446405!3d9.6348929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104c710074863c3d%3A0xc1ad0d9f07154dce!2sL-PRES%20Project%20Niger%20State%20Coordination%20Office!5e1!3m2!1sen!2sng!4v1763659429378!5m2!1sen!2sng"
+        className="w-full rounded-2xl"
+        height="350"
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   );
 };
 
