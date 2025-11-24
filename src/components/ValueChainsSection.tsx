@@ -1,19 +1,19 @@
-import fmafs from '../assets/fmafs.webp';
+import fmafs from '../assets/fmafs-b.webp';
 import LPRESTeam from '../assets/lpres-team.jpg';
 import nigerStateSeal from '../assets/niger-state-seal.jpg';
-import worldBank from '../assets/world-bank.webp';
+import worldBank from '../assets/world-bank-b.webp';
 import FromDanladiMohammed from './FromDanladiMohammed';
 import ValueChainsShowcase from './ValueChainsShowcase';
 
 const ValueChainsSection = () => {
   return (
     <div className="text-center">
-      <div className="bg-green-700 py-10 px-4 rounded-[60px]">
+      <div className="bg-gray-50 py-10 px-4 rounded-[60px]">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-3xl font-semibold pb-8 text-lime-100 border-b-[1px] border-lime-100 lg:border-0 lg:text-4xl">
+          <h2 className="text-3xl font-semibold text-green-900 lg:text-4xl">
             Welcome to Livestock Productivity & Resilience Project (L-PRES)
           </h2>
-          <div className="text-white border-b-[1px] border-lime-100 pb-10 my-8">
+          <div className="text-gray-600 my-8">
             <p>
               L-PRES is a 6 Year Project with Development Objective PDO to
               improve livestock productivity, resilience and commercialization
