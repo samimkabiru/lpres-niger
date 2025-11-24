@@ -11,6 +11,7 @@ import Errorpage from './pages/Errorpage';
 import FAQSpage from './pages/FAQSpage';
 import ProjectsDetailspage from './pages/ProjectDetailspage';
 import NewsDetailspage from './pages/NewsDetailspage';
+import ComplaintPage from './pages/ComplaintPage';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       { path: 'projects/:id', element: <ProjectsDetailspage /> },
       { path: 'news/:id', element: <NewsDetailspage /> },
       { path: 'faqs', element: <FAQSpage /> },
+      { path: 'complaint', element: <ComplaintPage /> },
     ],
   },
 ]);
