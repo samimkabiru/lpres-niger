@@ -11,7 +11,6 @@ const NavBar = () => {
         { name: 'The L-Pres Team', path: '/team' },
       ],
     },
-    { name: 'Events', path: '/events' },
     { name: 'News', path: '/news' },
     { name: 'Contact', path: 'contact' },
     { name: 'Lay a Complaint', path: '/complaint' },

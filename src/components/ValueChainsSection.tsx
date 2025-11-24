@@ -3,13 +3,11 @@ import LPRESTeam from '../assets/lpres-team.jpg';
 import nigerStateSeal from '../assets/niger-state-seal.jpg';
 import worldBank from '../assets/world-bank.webp';
 import FromDanladiMohammed from './FromDanladiMohammed';
-import LPRESCalendar from './LPRESCalendar';
 import ValueChainsShowcase from './ValueChainsShowcase';
 
 const ValueChainsSection = () => {
   return (
     <div className="text-center">
-      <LPRESCalendar />
       <div className="bg-green-700 py-10 px-4 rounded-[60px]">
         <div className="max-w-[900px] mx-auto">
           <h2 className="text-3xl font-semibold pb-8 text-lime-100 border-b-[1px] border-lime-100 lg:border-0 lg:text-4xl">

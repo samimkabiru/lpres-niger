@@ -1,17 +1,16 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Layout from './pages/Layout';
-import Homepage from './pages/Homepage';
 import Aboutpage from './pages/Aboutpage';
-import Eventspage from './pages/Eventspage';
-import Newspage from './pages/Newspage';
-import LPRESTeampage from './pages/LPRESTeampage';
+import ComplaintPage from './pages/ComplaintPage';
 import Contactpage from './pages/Contactpage';
-import Projectspage from './pages/Projectspage';
 import Errorpage from './pages/Errorpage';
 import FAQSpage from './pages/FAQSpage';
-import ProjectsDetailspage from './pages/ProjectDetailspage';
+import Homepage from './pages/Homepage';
+import Layout from './pages/Layout';
+import LPRESTeampage from './pages/LPRESTeampage';
 import NewsDetailspage from './pages/NewsDetailspage';
-import ComplaintPage from './pages/ComplaintPage';
+import Newspage from './pages/Newspage';
+import ProjectsDetailspage from './pages/ProjectDetailspage';
+import Projectspage from './pages/Projectspage';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +20,6 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Homepage /> },
       { path: 'about', element: <Aboutpage /> },
-      { path: 'events', element: <Eventspage /> },
       { path: 'news', element: <Newspage /> },
       { path: 'team', element: <LPRESTeampage /> },
       { path: 'contact', element: <Contactpage /> },
