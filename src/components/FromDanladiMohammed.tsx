@@ -3,7 +3,7 @@ import danladiMohammed from '../assets/danladi-mohammed.jpg';
 
 const FromDanladiMohammed = () => {
   return (
-    <div className="py-16 px-4 my-10 bg-gray-100 flex justify-center rounded-3xl">
+    <div className="py-16 px-4 my-10 bg-gray-50 flex justify-center rounded-3xl">
       <div className="relative z-0 ">
         <span className="inline-block text-6xl text-gray-200 absolute top-3 right-2 z-10 ">
           <FaQuoteLeft />

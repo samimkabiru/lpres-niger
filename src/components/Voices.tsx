@@ -17,7 +17,7 @@ const Voices = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-16 px-4 my-10 rounded-4xl">
+    <div className="bg-gray-50 py-16 px-4 my-10 rounded-4xl">
       <div className="grid lg:grid-cols-2 max-w-[765px] mx-auto gap-10">
         {voices.map((voice) => (
           <div
