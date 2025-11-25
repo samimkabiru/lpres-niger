@@ -7,7 +7,6 @@ import {
 
 import fmafs from '../assets/fmafs-b.webp';
 import worldBank from '../assets/world-bank-b.webp';
-import { Link } from 'react-router-dom';
 
 const FAQSpage = () => {
   const FAQS = [

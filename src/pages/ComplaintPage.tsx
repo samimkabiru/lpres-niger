@@ -14,11 +14,11 @@ const schema = z.object({
   name: z
     .string()
     .min(5, 'name cannot be less than 5 characters.')
-    .max(20, 'name must not exceed 20 characters.'),
+    .max(20, 'name cannot not exceed 20 characters.'),
   email: z
     .email('please enter a valid email address')
     .min(10)
-    .max(40, 'cannot be more than 40 characters.'),
+    .max(40, 'email cannot not exceed 40 characters.'),
   subject: z
     .string()
     .min(10, 'subject must be at least 10 characters.')
