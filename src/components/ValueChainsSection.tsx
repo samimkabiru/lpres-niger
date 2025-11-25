@@ -3,11 +3,16 @@ import LPRESTeam from '../assets/lpres-team.jpg';
 import nigerStateSeal from '../assets/niger-state-seal.jpg';
 import worldBank from '../assets/world-bank-b.webp';
 import FromDanladiMohammed from './FromDanladiMohammed';
+import ProjectsCarousel from './ProjectsCarousel';
 import ValueChainsShowcase from './ValueChainsShowcase';
 
 const ValueChainsSection = () => {
   return (
     <div className="text-center">
+      <div className="py-14 px-4">
+        <ProjectsCarousel />
+      </div>
+
       <div className="bg-gray-50 py-10 px-4 rounded-[60px]">
         <div className="max-w-[900px] mx-auto">
           <h2 className="text-3xl font-semibold text-green-900 lg:text-4xl">
@@ -42,7 +47,7 @@ const ValueChainsSection = () => {
           <img className="w-[27%] sm:w-[16%]" src={worldBank} alt="logo" />
         </div>
       </div>
-      <div className="py-[100px] px-4 text-left text-gray-600 grid items-center gap-10 max-w-[1024px] mx-auto lg:grid-cols-2">
+      <div className="py-20 px-4 text-left text-gray-600 grid items-center gap-10 max-w-[1024px] mx-auto lg:grid-cols-2">
         <div className="text-[16px]">
           <h2 className="font-semibold text-3xl text-green-800 mb-4 lg:text-5xl">
             Selected Value Chains

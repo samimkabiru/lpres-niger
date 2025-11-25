@@ -1,10 +1,9 @@
 import { GiDuration, GiMoneyStack } from 'react-icons/gi';
 import { IoLogoWebComponent } from 'react-icons/io5';
 import { MdOutlineVpnLock } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import farmRoosters from '../assets/farm-roosters.jpg';
 import MileStones from './MileStones';
-import UtilityCarousel from './ProjectsCarousel';
-import { Link } from 'react-router-dom';
 
 const FrameworkSection = () => {
   const statistics = [
@@ -95,7 +94,7 @@ const FrameworkSection = () => {
         />
       </div>
 
-      <div className="py-[75px]" data-aos="fade-up" data-aos-duration="400">
+      <div className="pt-14 pb-10" data-aos="fade-up" data-aos-duration="400">
         <div className="max-w-[650px] mx-auto p-3 bg-white border border-gray-200 rounded-lg shadow-sm text-left">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-green-800 capitalize">
             we finish what we start
@@ -131,7 +130,6 @@ const FrameworkSection = () => {
           </Link>
         </div>
       </div>
-      <UtilityCarousel />
       <MileStones />
     </div>
   );
